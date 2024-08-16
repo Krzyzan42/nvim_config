@@ -10,10 +10,12 @@ return {
 			vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
 			vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
-			vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
-			vim.keymap.set("n", "<C-j>", function() harpoon:list():select(2) end)
-			vim.keymap.set("n", "<C-k>", function() harpoon:list():select(3) end)
-			vim.keymap.set("n", "<C-l>", function() harpoon:list():select(4) end)
+			vim.keymap.set("n", "g1", function() harpoon:list():select(1) end, { noremap = true })
+			vim.keymap.set("n", "g2", function() harpoon:list():select(2) end, { noremap = true })
+			vim.keymap.set("n", "g3", function() harpoon:list():select(3) end, { noremap = true })
+			vim.keymap.set("n", "g4", function() harpoon:list():select(4) end, { noremap = true })
+			vim.keymap.set("n", "g5", function() harpoon:list():select(5) end, { noremap = true })
+			vim.keymap.set("n", "g6", function() harpoon:list():select(6) end, { noremap = true })
 		end,
 	},
 	{

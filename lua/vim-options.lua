@@ -6,3 +6,6 @@ vim.cmd("set mouse=")
 vim.cmd("set number")
 vim.cmd("set relativenumber")
 
+vim.keymap.set('n', 'gn', ':bnext<CR>')
+vim.keymap.set('n', 'gp', ':bjrev<CR>')
+vim.keymap.set('n', '<leader>rr', ':w<CR>:so %<CR>')
