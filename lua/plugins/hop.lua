@@ -6,7 +6,7 @@ return {
       case_insensitive = true,
     })
     local dirs = require('hop.hint').HintDirection
-    vim.keymap.set('', 'W', function () hop.hint_words({ direction = dirs.AFTER_CURSOR}) end)
+    vim.keymap.set('', 'W', function () hop.hint_words({ }) end)
     vim.keymap.set('', 'B', function () hop.hint_words({ direction = dirs.BEFORE_CURSOR }) end)
     vim.keymap.set('', 'J', function () hop.hint_lines({ direction = dirs.AFTER_CURSOR }) end)
     vim.keymap.set('', 'K', function () hop.hint_lines({ direction = dirs.BEFORE_CURSOR }) end)

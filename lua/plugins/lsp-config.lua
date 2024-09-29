@@ -65,6 +65,7 @@ return {
       })
       lspconfig.clangd.setup({})
     end,
+    lazy = true
   },
 }
     --vim.api.nvim_create_autocmd('LspAttach', {
